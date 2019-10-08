@@ -9,6 +9,7 @@ Demo application demostrating the crash happening because of FAB animation. Scro
 
 Here is the problem, making  cornerSizeTopRight and cornerSizeBottomLeft to 30dp is causing the crash. 
 ![Crash](/gifs/30dpCorners.gif)
+
 ```
 <style name="ShapeAppearance.Sunflower.FAB" parent="ShapeAppearance.MaterialComponents">
         <item name="cornerFamily">rounded</item>
@@ -18,7 +19,9 @@ Here is the problem, making  cornerSizeTopRight and cornerSizeBottomLeft to 30dp
         <item name="cornerSizeBottomLeft">30dp</item>
 </style>
 ```
-Below code works ![Crash](/gifs/0dpCorners.gif)
+Below code works, the only difference is that all corners are of 0dp
+![Crash](/gifs/0dpCorners.gif)
+
 ```
 <style name="ShapeAppearance.Sunflower.FAB" parent="ShapeAppearance.MaterialComponents">
         <item name="cornerFamily">rounded</item>
